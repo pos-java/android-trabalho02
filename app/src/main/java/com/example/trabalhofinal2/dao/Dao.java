@@ -1,4 +1,4 @@
-package com.example.trabalhofinal2;
+package com.example.trabalhofinal2.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import com.example.trabalhofinal2.model.Ponto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +20,7 @@ public class Dao extends SQLiteOpenHelper {
         super(context, "pontos2", null, 2);
     }
 
-    void addPontoTuristico(Ponto pontoTuristico) {
+    public void addPontoTuristico(Ponto pontoTuristico) {
         SQLiteDatabase db = getReadableDatabase();
 
         ContentValues values = new ContentValues();
@@ -53,6 +55,14 @@ public class Dao extends SQLiteOpenHelper {
         c.close();
 
         return pontos;
+    }
+
+    public Cursor listar(){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor registros = db.query("pontos2", null, null, null, null, null, null);
+
+        return registros;
     }
 
     @Override

@@ -15,9 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ListaPontosActivity"></activity>
+        <activity
+            android:name=".custom.ListCustomActivity"
+            android:label="@string/title_activity_list"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CadastroActivity"
-            android:label="Trabalho Android" >
+            android:label="Trabalho Android">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

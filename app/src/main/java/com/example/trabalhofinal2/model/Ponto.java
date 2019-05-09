@@ -1,4 +1,4 @@
-package com.example.trabalhofinal2;
+package com.example.trabalhofinal2.model;
 
 public class Ponto {
 

@@ -23,6 +23,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.trabalhofinal2.dao.Dao;
+import com.example.trabalhofinal2.model.Ponto;
+
 import java.io.ByteArrayOutputStream;
 import java.util.Objects;
 
@@ -180,5 +183,10 @@ public class CadastroActivity extends AppCompatActivity implements LocationListe
 
     public void abrirMapa(View view) {
         startActivity(new Intent(CadastroActivity.this, MapsActivity.class));
+    }
+
+    public void onClickListar(View view) {
+        Intent intent = new Intent(CadastroActivity.this, ListaPontosActivity.class);
+        startActivity(intent);
     }
 }

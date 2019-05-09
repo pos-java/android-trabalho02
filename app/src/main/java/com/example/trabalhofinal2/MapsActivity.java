@@ -1,10 +1,11 @@
 package com.example.trabalhofinal2;
 
-import android.database.Cursor;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.example.trabalhofinal2.dao.Dao;
+import com.example.trabalhofinal2.model.Ponto;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
