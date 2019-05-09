@@ -33,7 +33,7 @@ public class Dao extends SQLiteOpenHelper {
         db.insert("pontos2", null, values);
     }
 
-    List<Ponto> listarPontos() {
+    public List<Ponto> listarPontos() {
         String sql = "SELECT * FROM pontos2";
         Cursor c = db.rawQuery(sql, null);
         List<Ponto> pontos = new ArrayList<>();
