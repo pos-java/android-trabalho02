@@ -180,13 +180,4 @@ public class CadastroActivity extends AppCompatActivity implements LocationListe
     public static Bitmap getImage(byte[] image) {
         return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
-
-    public void abrirMapa(View view) {
-        startActivity(new Intent(CadastroActivity.this, MapsActivity.class));
-    }
-
-    public void onClickListar(View view) {
-        Intent intent = new Intent(CadastroActivity.this, ListaPontosActivity.class);
-        startActivity(intent);
-    }
 }

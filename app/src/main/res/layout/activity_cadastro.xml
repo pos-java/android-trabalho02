@@ -55,24 +55,6 @@
             android:layout_weight="3"
             android:text="Salvar" />
 
-        <Button
-            android:id="@+id/btn_ver_mapa"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="3"
-            android:onClick="abrirMapa"
-            android:text="Ver Mapa" />
-
-        <Button
-            android:id="@+id/btn_lista"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="3"
-            android:onClick="onClickListar"
-            android:text="Listar" />
-
     </LinearLayout>
 
 
